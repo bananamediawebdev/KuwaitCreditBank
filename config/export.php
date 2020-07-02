@@ -68,7 +68,7 @@ return [
      */
     'after' => [
         // 'deploy' => '/usr/local/bin/netlify deploy --prod',
-        'surge ./dist design-kcb.surge.sh'
+        // 'surge ./dist design-kcb.surge.sh'
     ],
 
 ];
