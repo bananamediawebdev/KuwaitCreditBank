@@ -1,0 +1,93 @@
+@font-face {
+    src: url('../fonts/hbold.otf');
+    font-family: hbold;
+}
+
+@font-face {
+    src: url('../fonts/hroman.otf');
+    font-family: hroman;
+}
+
+@font-face {
+    src: url('../fonts/hlight.otf');
+    font-family: hlight;
+}
+
+body {
+    font-family: hroman !important;
+}
+
+html {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scroll-behavior: smooth;
+}
+
+section {
+    @apply p-3
+}
+
+@media (min-width: 1024px) {
+    .PageNavigationLinks {
+        &:hover .NavigationIcons{
+            path{
+                fill:rgb(208, 183, 135);
+            }
+        }
+        p {
+            display: none;
+        }
+        &:hover {
+            p {
+                display: inline;
+            }
+        }
+    }
+    .SocialMediaSection{
+       
+        a:hover {
+            svg{
+                path{
+                    fill:rgb(208, 183, 135);
+                }
+            }
+            color:rgb(208, 183, 135);
+        }
+    }
+   
+}
+
+// Footer
+footer {
+    section {
+        background-image: url('../img/Pattern.png');
+        background-size: 100%;
+    }
+}
+
+
+// .Menu__Content a{@apply p-2;}
+.Menu__Content a:hover{@apply bg-brand text-dark;} 
+// Main Menu container
+.Menu__Container{
+    .Menu__Content{
+        display:none;
+        width:100%;
+        right:100%;
+    }
+    &:hover .Menu__Content
+    {
+        display:flex;
+    }
+}
+
+// Main Carousel
+.Main__Carousel{
+    .Carousel__Caption{
+        visibility:hidden;
+    }
+    &:hover .Carousel__Caption{
+        visibility:visible;
+    }
+}
